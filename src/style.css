@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+  font-family: Outfit;
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+:root {
+  --Nutmeg: #854632;
+  --Dark-Raspberry: #7b284f;
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+  --Font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+.font-primary {
+  font-family: "Young Serif";
+}
+.full-screen {
+  width: 100%;
+  min-height: 100%;
+}
+p {
+  color: var(--Dark-Charcoal);
+}
+li {
+  margin-block: 15px;
+}
+.line {
+  width: 90%;
+  height: 2px;
+  background-color: var(--Light-Grey);
+  margin-inline: auto;
+}
+strong {
+  color: var(--Dark-Charcoal);
+}
+body {
+  width: 100vw;
+  background-color: var(--Rose-White);
+  padding: 5% 10%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mb {
+  margin-block: 30px;
+}
+body > main > section > h2 {
+  color: var(--Nutmeg);
+}
+body > main {
+  border-radius: 40px;
+  padding: 30px;
+  background-color: var(--White);
+}
+body > main > img {
+  border-radius: 10px;
+}
+body > main > h1 {
+  text-transform: capitalize;
+}
+body > main > .prepare-time {
+  padding: 15px 5%;
+  background-color: var(--Rose-White);
+  border-radius: 10px;
+}
+body > main > .prepare-time li {
+  margin-block: 10px;
+}
+body > main > .prepare-time h2 {
+  color: var(--Dark-Raspberry);
+}
+body > main > section :where(ul, ol) {
+  padding-inline: 30px;
+}
+body > main > .nutrition p {
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+}
+table tr {
+  height: 40px;
+}
+table td {
+  border-bottom: 2px solid var(--Light-Grey);
+}
+table td:last-child strong {
+  color: var(--Nutmeg);
+}
